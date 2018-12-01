@@ -98,35 +98,6 @@ h1, h2, h3, h4, h5, h6 {
   font-size: .875rem;
 }
 
-  /* Intro Box */
-.jumbotron{
-  margin-bottom: 0px;
-}
-
-/* Skin Request Example */
-.card{
-  margin-top: 10px;
-  color: white;
-  background-color: #514E52;
-  margin: 10px;
-}
-
-.card ul{
-  list-style-type: none;
-  text-align: left;
-  margin-top: 30px;
-}
-
-.card-img-right {
-  height: 100%;
-  border-radius: 0 3px 3px 0;
-}
-
-.skin {
-  background-color: #343a40;
-}
-
-
 /* img */
 .flex-auto {
   -ms-flex: 0 0 auto;
@@ -138,6 +109,37 @@ h1, h2, h3, h4, h5, h6 {
 @media (min-width: 768px) {
   .h-md-250 { height: 250px; }
 }
+
+/* Side nav */
+
+.sidebar-sticky{
+  border-right: 1px solid  #FC4A1A;;
+}
+
+.sidebar-sticky h6{
+  font-size: 25px;
+}
+
+
+.sidebar-sticky a{
+  color: black;
+  font-size: 16px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  text-decoration: none;
+}
+
+.sidebar-sticky a:hover{
+  color: #FC4A1A;
+ 
+}
+
+/* Docs article */
+.article-post h3{
+  font-weight: bold;
+}
+
+
 
 
 /*

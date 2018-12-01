@@ -27,6 +27,7 @@
 }
 
 
+
 .site-header-logo:hover {
   text-decoration: none;
 }
@@ -57,6 +58,7 @@ h1, h2, h3, h4, h5, h6 {
 
 }
 
+
 .nav-scroller a {
   color: #262228;
 
@@ -73,9 +75,8 @@ h1, h2, h3, h4, h5, h6 {
 
 /* selected link */
 .nav-scroller a:active {
-  color: #FC4A1A;
+    color: #FC4A1A;
 }
-
 
 .nav-scroller .nav {
   display: -webkit-box;
@@ -98,48 +99,14 @@ h1, h2, h3, h4, h5, h6 {
   font-size: .875rem;
 }
 
-  /* Intro Box */
-.jumbotron{
-  margin-bottom: 0px;
+/* Article */
+.article-post{
+
 }
 
-/* Skin Request Example */
-.card{
-  margin-top: 10px;
-  color: white;
-  background-color: #514E52;
-  margin: 10px;
+.article-post a{
+  color: #FC4A1A;
 }
-
-.card ul{
-  list-style-type: none;
-  text-align: left;
-  margin-top: 30px;
-}
-
-.card-img-right {
-  height: 100%;
-  border-radius: 0 3px 3px 0;
-}
-
-.skin {
-  background-color: #343a40;
-}
-
-
-/* img */
-.flex-auto {
-  -ms-flex: 0 0 auto;
-  -webkit-box-flex: 0;
-  flex: 0 0 auto;
-}
-
-.h-250 { height: 250px; }
-@media (min-width: 768px) {
-  .h-md-250 { height: 250px; }
-}
-
-
 /*
  * Footer
  */
