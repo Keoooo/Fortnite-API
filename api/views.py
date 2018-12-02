@@ -8,6 +8,7 @@ from .serializer import SkinSerializer, SeasonSerializer
 
 
 class OutfitView(viewsets.ModelViewSet):
+	""" Returns a view off all the skins"""
 	pagination_class = GetLimitOffsetPagination
 	queryset = fortniteskins.objects.all()
 	serializer_class = SkinSerializer
@@ -16,12 +17,14 @@ class OutfitView(viewsets.ModelViewSet):
 
 
 class seasonView(viewsets.ModelViewSet):
+	""" Returns a view off all the seasons and themes and date"""
 	queryset = season.objects.all()
 	serializer_class = SeasonSerializer
 	throttle_scope = 'skinrequest'
 	throttle_classes = (ScopedRateThrottle,)
 
 class SingleSkin(viewsets.ModelViewSet):
+	""" SIngle Skin"""
 	serializer_class = fortniteskins.objects.all()
 	queryset = fortniteskins.objects.all()
 	lookup_field = 'id'

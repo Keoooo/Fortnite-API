@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'api',
     'about',
     'docs',
+    'rest_framework_tracking',
 ]
 
 MIDDLEWARE = [
