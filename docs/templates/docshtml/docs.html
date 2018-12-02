@@ -184,53 +184,81 @@
                   </tbody>
                 </table>
                 <p><i>Sample request</i></p>
-                <p>You can request all skins using </p><pre><code class="json">http://www.thefortniteapi.com/api/outfits/</code> <pre><code class="json">
-                    [
-                    {
-                      "id": 10,
-                      "name": "Patch Patrola",
-                      "season": "http://localhost:8000/api/season/3/",
-                      "rarity": "Common",
-                      "price": 1500,
-                      "outfit_img": "http://localhost:8000/media/images/deadfire-outfit_b8jgb9H.png"
-                    },
-                    {
-                      "id": 11,
-                      "name": "t2",
-                      "season": "http://localhost:8000/api/season/4/",
-                      "rarity": "legend",
-                      "price": 1000,
-                      "outfit_img": "http://localhost:8000/media/images/patch-patroller-outfit_Ga2IJ6R.png"
-                    },
-                    {
-                      "id": 12,
-                      "name": "33",
-                      "season": "http://localhost:8000/api/season/2/",
-                      "rarity": "yo",
-                      "price": 193,
-                      "outfit_img": "http://localhost:8000/media/images/patch-patroller-outfit_eYhDKPt.png"
-                    },
-                    {
-                      "id": 13,
-                      "name": "t3",
-                      "season": "http://localhost:8000/api/season/5/",
-                      "rarity": "dsfeafe",
-                      "price": 29942,
-                      "outfit_img": "http://localhost:8000/media/images/test1_SMiFFgL.jpg"
-                    }
-                    ]
+                <p>You can request all skins using </p><pre><code class="json">http://www.thefortniteapi.com/api/outfits/</code> <pre><code class="json">{
+    "count": 7,
+    "next": null,
+    "previous": null,
+    "results": [
+        {
+            "id": 1,
+            "name": "Default 1",
+            "season": "http://www.thefortniteapi.com/api/season/1/",
+            "rarity": "Common",
+            "price": 0,
+            "outfit_img": "http://www.thefortniteapi.com/media/images/fortnite-outfit-default8-816x668.jpg"
+        },
+        {
+            "id": 2,
+            "name": "Default 2",
+            "season": "http://www.thefortniteapi.com/api/season/1/",
+            "rarity": "Common",
+            "price": 0,
+            "outfit_img": "http://www.thefortniteapi.com/media/images/fo-default-2.jpg"
+        },
+        {
+            "id": 3,
+            "name": "Default 3",
+            "season": "http://www.thefortniteapi.com/api/season/1/",
+            "rarity": "Common",
+            "price": 0,
+            "outfit_img": "http://www.thefortniteapi.com/media/images/fo-default-3.jpg"
+        },
+        {
+            "id": 4,
+            "name": "Default 4",
+            "season": "http://www.thefortniteapi.com/api/season/1/",
+            "rarity": "Common",
+            "price": 0,
+            "outfit_img": "http://www.thefortniteapi.com/media/images/fo-default-4.jpg"
+        },
+        {
+            "id": 5,
+            "name": "Default 5",
+            "season": "http://www.thefortniteapi.com/api/season/1/",
+            "rarity": "Common",
+            "price": 0,
+            "outfit_img": "http://www.thefortniteapi.com/media/images/fo-deafault-5.jpg"
+        },
+        {
+            "id": 6,
+            "name": "Default 6",
+            "season": "http://www.thefortniteapi.com/api/season/1/",
+            "rarity": "Common",
+            "price": 0,
+            "outfit_img": "http://www.thefortniteapi.com/media/images/fo-deafault-6.jpg"
+        },
+        {
+            "id": 7,
+            "name": "Default 8",
+            "season": "http://www.thefortniteapi.com/api/season/1/",
+            "rarity": "Common",
+            "price": 0,
+            "outfit_img": "http://www.thefortniteapi.com/media/images/fo-deafault-8.jpg"
+        }
+    ]
+}
                   </code></pre>
                   <h3 id="what-is-this" style="margin-top: 1px;">Get a single skin</h3>
                   <p>You can get a single skin by adding the id as a parameter: /outfits/3/</p><pre><code class="json">
                   http://www.thefortniteapi.com/api/outfits/3/</code>
-                   <p><i>Sample request</i></p><pre><code class="json">{
-                    "id": 10,
-                    "name": "Patch Patrola",
-                    "season": "http://localhost:8000/api/season/3/",
-                    "rarity": "Common",
-                    "price": 1500,
-                    "outfit_img": "http://localhost:8000/media/images/deadfire-outfit_b8jgb9H.png"
-                  }</code>
+                   <p><i>Sample request</i></p><pre><code class="json"> {
+            "id": 7,
+            "name": "Default 8",
+            "season": "http://www.thefortniteapi.com/api/season/1/",
+            "rarity": "Common",
+            "price": 0,
+            "outfit_img": "http://www.thefortniteapi.com/media/images/fo-deafault-8.jpg"
+        }</code>
                   <h3 id="coming-soon">Coming Soon!</h3>
                   <p>Pickaxes, gliders and emotes API coming soon!</p>
                   <h3 id="libraries">Libraries</h3>
