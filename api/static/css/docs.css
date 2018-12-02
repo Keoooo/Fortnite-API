@@ -5,6 +5,10 @@
   height: 100px;
   letter-spacing: 3px;
 }
+p{
+  font-family: 'Inconsolata', monospace;
+  font-size: 16px;
+}
 
 /* Git Logo */
 .site-header a{
@@ -139,7 +143,21 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: bold;
 }
 
+.article-post a{
+  text-decoration: underline;
+  color: #262228;
+  display: inline-block;
 
+}
+
+.article-post {
+  width: 100%;
+}
+
+/* TABLE  */
+.table{
+  border-bottom: 1px;
+}
 
 
 /*

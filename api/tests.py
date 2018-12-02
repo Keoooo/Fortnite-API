@@ -1,18 +1,20 @@
 from django.test import TestCase
 from .models import fortniteskins
+from rest_framework.test import APITestCase
+from rest_framework import status
+from rest_framework.test import APIClient
 
-class ModelTestCase(TestCase):
+
+client = APIClient()
+client.get('/api/outfits/13/', format='json')
+
+class ModelTestCase(APITestCase):
     """This class defines the test suite for the bucketlist model."""
 
-    def setUp(self):
+    def testGet(self):
         """Define the test client and other test variables."""
-        self.fortniteskins = "Write Test"
-        self.fortniteskins = fortniteskins(name=self.fortniteskins_name)
-
-    def test_model_can_create_a_fort(self):
-        """Test the bucketlist model can create a bucketlist."""
-        old_count = fortniteskins.objects.count()
-        self.fortniteskins.save()
-        new_count = fortniteskins.objects.count()
-        self.assertNotEqual(old_count, new_count)
+        data = {}
+        url = "/api/outfits/13/"
+        response = self.client.get(url, data, format='json')
+        self.assertEqual(response.status_code, status.HTTP_200_OK)
 

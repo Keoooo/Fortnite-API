@@ -1,16 +1,19 @@
 {% load static %}
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <link rel="icon" href="../../../../favicon.ico">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <link rel="icon" href="../../../../favicon.ico">
 
-    <title>FortniteAPI</title>
+  <title>FortniteAPI</title>
+  <!-- code snippets  -->
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/styles/atelier-cave-dark.min.css">
+  
 
-   <!-- Bootstrap core CSS -->
+  <!-- Bootstrap core CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 
 
@@ -18,153 +21,249 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
 
 
-    <!-- Custom styles for this template -->
-    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:700,900" rel="stylesheet">
-    <link  rel="stylesheet" type="text/css" href="{% static 'css/docs.css' %}">
-    <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Gloria+Hallelujah|Patrick+Hand|Inconsolata" rel="stylesheet">
+  <!-- Custom styles for this template -->
+  <link href="https://fonts.googleapis.com/css?family=Playfair+Display:700,900" rel="stylesheet">
+  <link  rel="stylesheet" type="text/css" href="{% static 'css/docs.css' %}">
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Gloria+Hallelujah|Patrick+Hand|Inconsolata" rel="stylesheet">
 
-  </head>
+</head>
+
+<!-- code snippets  -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+<body>
 
 
-  <body>
 
+  <div class="container">
+    <div class="nav-scroller py-1 mb-2">
+      <nav class="nav d-flex justify-content-start al">
+        <a class="p-2" href="{% url 'apihome' %}">Home</a>
+        <a class="p-2" href="{% url 'about' %}">About</a>
+        <a class="p-2" style="color: #FC4A1A;" href="#">Documentation</a>
+        <a class="p-2 ml-auto  " href="https://github.com/Keoooo" target="_blank"><i class="fab fa-github fa-1x"></i></a>
+      </nav>
+    </div>
+    <header class="site-header py-3">
+      <div class="row flex-nowrap justify-content-between align-items-center">
+        <div class="col-4 pt-1">
+          <a class="" href="#"></a>
+        </div>
+        <div class="col-4 text-center">
+          <h1 class="site-header-logo">The Fortnite API</h1>
+        </div>
+        <div class="col-4 d-flex justify-content-end align-items-center">
 
-
-    <div class="container">
-        <div class="nav-scroller py-1 mb-2">
-        <nav class="nav d-flex justify-content-start al">
-          <a class="p-2" href="{% url 'apihome' %}">Home</a>
-          <a class="p-2" href="{% url 'about' %}">About</a>
-          <a class="p-2" style="color: #FC4A1A;" href="#">Documentation</a>
-          <a class="p-2 ml-auto  " href="https://github.com/Keoooo" target="_blank"><i class="fab fa-github fa-1x"></i></a>
-        </nav>
+        </div>
       </div>
-      <header class="site-header py-3">
-        <div class="row flex-nowrap justify-content-between align-items-center">
-          <div class="col-4 pt-1">
-            <a class="" href="#"></a>
-          </div>
-          <div class="col-4 text-center">
-            <h1 class="site-header-logo">The Fortnite API</h1>
-          </div>
-          <div class="col-4 d-flex justify-content-end align-items-center">
-            
+    </header>
+    <hr/ style="background-color: #FC4A1A;">
+
+    
+
+
+
+    <main role="main" class="container">
+
+      <div class="side container-fluid">
+        <div class="row">
+          <nav class="col-md-2 d-none d-md-block sidebar">
+            <div class="sidebar-sticky">
+              <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+                <span>Intro</span>
+                <a class="d-flex align-items-center text-muted" href="#"></a>
+              </h6>
+              <ul class="nav flex-column mb-2">
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Rate Limit</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">REST</a>
+                </li>
+              </ul>
+
+              <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+                <span>Outfits</span>
+                <a class="d-flex align-items-center text-muted" href="#"></a>
+              </h6>
+              <ul class="nav flex-column mb-2">
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Schema</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Get Outfits</a>
+                </li>
+              </ul>
+
+              <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+                <span>Coming Soon</span>
+                <a class="d-flex align-items-center text-muted" href="#"></a>
+              </h6>
+              <ul class="nav flex-column mb-2">
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Pickaxe</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Gliders</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Emotes</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+
+          <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4">
+            <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+              <article class="article-post">
+                <p>&nbsp;</p>
+                <h3 id="what-is-this">Intro</h3>
+                <p>This documentation will help you get familiar with the resources of the <strong>fortnite API </strong>and show you how to make different queries, so that you can get the most out of it.</p>
+                <p>&nbsp;</p>
+                <h3 id="what-is-this">Rate limit</h3>
+                <p>You can make 100 requests per day</p>
+                <p>&nbsp;</p>
+                <h3 id="what-is-this">Rest</h3>
+                <h5>Base url  <a class="nav-link" href="http://www.thefortniteapi.com/api/">http://www.thefortniteapi.com/api/</a></h5>
+                <p>The base url contains information about all available API's resources. All requests are <code class="language-text">GET</code> requests and go over <code class="language-text">https</code>. All responses will return data in json.</p>
+                <pre><code class="json">
+                  {
+                    "outfits": "http://www.thefortniteapi.com/api/outfits/",
+                    "season": "http://www.thefortniteapi.com/api/season/"
+                  }
+                </code></pre>
+                <p>There are currently three available resources:</p>
+                <ul>
+                  <li>Outfits</li>
+                  <li>Season</li>
+                </ul>
+                <p><strong>More coming soon</strong></p>
+                <p>&nbsp;</p>
+                <h3 id="what-is-this">Outfits</h3>
+                <h4>Skins Schema</h4>
+                <table class="table">
+                  <thead>
+                    <tr>
+                      <th>Key</th>
+                      <th>Type</th>
+                      <th>Description</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>id</td>
+                      <td>int</td>
+                      <td>The id of the character.</td>
+                    </tr>
+                    <tr>
+                      <td>name</td>
+                      <td>string</td>
+                      <td>The skins name</td>
+                    </tr>
+                    <tr>
+                      <td>season</td>
+                      <td>array</td>
+                      <td>The season the skin was first seen</td>
+                    </tr>
+                    <tr>
+                      <td>rarity</td>
+                      <td> string</td>
+                      <td>The rarity of the skin</td>
+                    </tr>
+                    <tr>
+                      <td>price</td>
+                      <td>int</td>
+                      <td>How many Vbucks is the skin worth</td>
+                    </tr>
+                    <tr>
+                      <td>image</td>
+                      <td>url</td>
+                      <td>image of the skin</td>
+                    </tr>
+                  </tbody>
+                </table>
+                <p><i>Sample request</i></p>
+                <p>You can request all skins using </p><pre><code class="json">http://www.thefortniteapi.com/api/outfits/</code> <pre><code class="json">
+                    [
+                    {
+                      "id": 10,
+                      "name": "Patch Patrola",
+                      "season": "http://localhost:8000/api/season/3/",
+                      "rarity": "Common",
+                      "price": 1500,
+                      "outfit_img": "http://localhost:8000/media/images/deadfire-outfit_b8jgb9H.png"
+                    },
+                    {
+                      "id": 11,
+                      "name": "t2",
+                      "season": "http://localhost:8000/api/season/4/",
+                      "rarity": "legend",
+                      "price": 1000,
+                      "outfit_img": "http://localhost:8000/media/images/patch-patroller-outfit_Ga2IJ6R.png"
+                    },
+                    {
+                      "id": 12,
+                      "name": "33",
+                      "season": "http://localhost:8000/api/season/2/",
+                      "rarity": "yo",
+                      "price": 193,
+                      "outfit_img": "http://localhost:8000/media/images/patch-patroller-outfit_eYhDKPt.png"
+                    },
+                    {
+                      "id": 13,
+                      "name": "t3",
+                      "season": "http://localhost:8000/api/season/5/",
+                      "rarity": "dsfeafe",
+                      "price": 29942,
+                      "outfit_img": "http://localhost:8000/media/images/test1_SMiFFgL.jpg"
+                    }
+                    ]
+                  </code></pre>
+                  <h3 id="what-is-this" style="margin-top: 1px;">Get a single skin</h3>
+                  <p>You can get a single skin by adding the id as a parameter: /outfits/3/</p><pre><code class="json">
+                  http://www.thefortniteapi.com/api/outfits/3/</code>
+                   <p><i>Sample request</i></p><pre><code class="json">{
+                    "id": 10,
+                    "name": "Patch Patrola",
+                    "season": "http://localhost:8000/api/season/3/",
+                    "rarity": "Common",
+                    "price": 1500,
+                    "outfit_img": "http://localhost:8000/media/images/deadfire-outfit_b8jgb9H.png"
+                  }</code>
+                  <h3 id="what-is-this">Coming Soon!</h3>
+                  <p>Pickaxes, gliders and emotes API coming soon!</p>
+                  <h3 id="technical-stuff">Libraries</h3>
+                  <p>Here you will find a list of helper libraries to use the Rick and Morty API<br/>with your preferred language. If you have used the api and would like to<br/>have your examples listed here please get in contact</p>
+                  <h5>COMING SOON</h5>
+                </article>
+              </div>
+            </main>
           </div>
         </div>
-      </header>
-       <hr/ style="background-color: #FC4A1A;">
-
-    
 
 
+      </main><!-- /.container -->
 
-<main role="main" class="container">
-    
-    <div class="side container-fluid">
-      <div class="row">
-        <nav class="col-md-2 d-none d-md-block sidebar">
-          <div class="sidebar-sticky">
-            <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
-              <span>Intro</span>
-              <a class="d-flex align-items-center text-muted" href="#"></a>
-            </h6>
-            <ul class="nav flex-column mb-2">
-              <li class="nav-item">
-                <a class="nav-link" href="#">Rate Limit</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">REST</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Info</a>
-              </li>
-            </ul>
-
-            <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
-              <span>Outfits</span>
-              <a class="d-flex align-items-center text-muted" href="#"></a>
-            </h6>
-            <ul class="nav flex-column mb-2">
-              <li class="nav-item">
-                <a class="nav-link" href="#">Schema</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Get Outfits</a>
-              </li>
-            </ul>
-
-            <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
-              <span>Coming Soon</span>
-              <a class="d-flex align-items-center text-muted" href="#"></a>
-            </h6>
-            <ul class="nav flex-column mb-2">
-              <li class="nav-item">
-                <a class="nav-link" href="#">Pickaxe</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Gliders</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Emotes</a>
-              </li>
-            </ul>
-          </div>
-        </nav>
-
-        <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4">
-          <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
-        <article class="article-post">
-        <p>&nbsp;</p>
-        <h3 id="what-is-this">Intro</h3>
-        <p>This documentation will help you get familiar with the resources of the <strong>fortnite API </strong>and show you how to make different queries, so that you can get the most out of it.</p>
-        <p>&nbsp;</p>
-        <h3 id="what-is-this">Rate limet</h3>
-        <p>Need to work out rate limit</p>
-        <p>&nbsp;</p>
-        <h3 id="what-is-this">Rest</h3>
-        <p>I wanted to build a nice little portfolio and thought it would be fun.</p>
-         <p>&nbsp;</p>
-        <h3 id="what-is-this">Info and Pagination</h3>
-        <p>Yes, but if you want to get involved contact me all help and advice is welcomed&nbsp;&nbsp;</p>
-        <h3>&nbsp;</h3>
-        <h3 id="what-is-this">Outfits</h3>
-        <p>I took a lot of inspiration from <a href="https://rickandmortyapi.com/">The Rick And Morty API</a>&nbsp;check out this awesome site!&nbsp;&nbsp;</p>
-        <p>&nbsp;</p>
-        <h3 id="what-is-this">Coming Soon!</h3>
-        <p>I took a lot of inspiration from <a href="https://rickandmortyapi.com/">The Rick And Morty API</a>&nbsp;check out this awesome site!&nbsp;&nbsp;</p>
-		<p>&nbsp;</p>
-        <h3 id="technical-stuff">Libraries</h3>
-        <p>I am using Django to create the site and API. All the data is formatted in json&nbsp;and I'm hosting the entire project on Digital Ocean.&nbsp;</p>
-        <p>&nbsp;</p>
-      </article>
-          </div>
-        </main>
-      </div>
-    </div>
- 
-
-    </main><!-- /.container -->
-
-    <footer class="blog-footer">
-      <p>Built by <a href="https://twitter.com/mdo">Andrew Keogh</a></p>
-    </footer>
+      <footer class="blog-footer">
+        <p>Built by <a href="https://twitter.com/mdo">Andrew Keogh</a></p>
+      </footer>
 
     <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
+      ================================================== -->
+      <!-- Placed at the end of the document so the pages load faster -->
     <!-- Bootstrap core JavaScript
       ================================================== -->
       <!-- Placed at the end of the document so the pages load faster -->
       <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
       <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" 
-    <script>
-      Holder.addTheme('thumb', {
-        bg: '#55595c',
-        fg: '#eceeef',
-        text: 'Thumbnail'
-      });
-    </script>
-  </body>
-</html>
+      <script>
+        Holder.addTheme('thumb', {
+          bg: '#55595c',
+          fg: '#eceeef',
+          text: 'Thumbnail'
+        });
+      </script>
+    </body>
+    </html>

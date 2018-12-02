@@ -104,22 +104,33 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* Skin Request Example */
+
+.card-body{
+  padding: 2px;
+}
 .card{
-  margin-top: 10px;
+  margin-top: 0px;
   color: white;
   background-color: #514E52;
   margin: 10px;
 }
 
+.card h4{
+  overflow:hidden;
+}
 .card ul{
   list-style-type: none;
   text-align: left;
   margin-top: 30px;
+  padding-left: 2px;
 }
 
 .card-img-right {
   height: 100%;
   border-radius: 0 3px 3px 0;
+}
+
+.result{
 }
 
 .skin {

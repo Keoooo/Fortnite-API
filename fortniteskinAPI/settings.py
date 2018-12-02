@@ -107,7 +107,21 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
+REST_FRAMEWORK = {
+    'DEFAULT_PERMISSION_CLASSES': ('rest_framework.permissions.IsAuthenticatedOrReadOnly',),
 
+    'DEFAULT_THROTTLE_CLASSES': (
+        'rest_framework.throttling.AnonRateThrottle',
+        'rest_framework.throttling.UserRateThrottle'
+    ),
+   
+    'DEFAULT_THROTTLE_RATES': {
+        'anon': '1/day',
+        'user': '1000/day',
+        'skinrequest': '500/day',
+    }
+    
+}
 # Internationalization
 # https://docs.djangoproject.com/en/2.1/topics/i18n/
 
