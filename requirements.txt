@@ -4,15 +4,16 @@ django-filter==2.0.0
 django-ratelimit==1.1.0
 djangorestframework==3.9.0
 drf-tracking==1.5.0
+<<<<<<< HEAD
+gunicorn==19.9.0
+=======
 graphene==2.1.3
 graphene-django==2.2.0
 graphql-core==2.1
 graphql-relay==0.4.5
+>>>>>>> e38fbe271f16280166f25360b996bf72b1d8edec
 Pillow==5.3.0
 promise==2.2.1
 psycopg2==2.7.6.1
 psycopg2-binary==2.7.6.1
 pytz==2018.7
-Rx==1.6.1
-singledispatch==3.4.0.3
-six==1.11.0
