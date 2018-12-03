@@ -27,6 +27,10 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
+GRAPHENE = {
+    'SCHEMA': 'fortniteskinAPI.schema.schema'
+}
+
 
 # Application definition
 
@@ -39,6 +43,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'rest_framework',
     'api',
+    'graphene_django',
     'about',
     'docs',
     'rest_framework_tracking',

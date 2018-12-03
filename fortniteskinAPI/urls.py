@@ -9,11 +9,13 @@ from django.urls import path, include
 from django.conf import settings
 from api import views
 from django.conf.urls.static import static
+from graphene_django.views import GraphQLView
 
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', views.apihome, name='apihome'),
+    path('graphql/', GraphQLView.as_view(graphiql=True)),
     path('api-auth/', include('rest_framework.urls')),
     path('api/', include('api.urls')),
     path('about/', include('about.urls'), name='about'),

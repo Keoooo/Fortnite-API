@@ -1,0 +1,3 @@
+Requirement already satisfied: django-filter in /Users/andrewkeogh/Desktop/FortniteSkinAPI/venv/lib/python3.6/site-packages (2.0.0)
+Requirement already satisfied: Django>=1.11 in /Users/andrewkeogh/Desktop/FortniteSkinAPI/venv/lib/python3.6/site-packages (from django-filter) (2.1.3)
+Requirement already satisfied: pytz in /Users/andrewkeogh/Desktop/FortniteSkinAPI/venv/lib/python3.6/site-packages (from Django>=1.11->django-filter) (2018.7)
